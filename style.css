@@ -47,14 +47,14 @@ body {
 }
 .flexbox .image {
     height: auto;
-    max-width: 700px;
-    width: 60%;
+    max-width: 600px;
+    width: 50%;
     justify-content: right; 
     padding-right: 10px; 
     float:right;
     margin-right: 300px;
-    margin-left: 600px;
-    margin-top: -1500px; 
+    margin-left: 500px;
+    margin-top: -1100px; 
     z-index: 1;
 }
 
