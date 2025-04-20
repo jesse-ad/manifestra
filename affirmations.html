@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="webIcon/jpg.webp" href="webIcon.jpg"> <!-- Fix icon--> 
+        <title>Manifestra</title>
+        <style type="text/css">
+            *{
+                text-decoration: none; 
+            }
+            .navbar {
+                font-family: sans-serif; padding-right: 15px; padding-left: 15px; padding-top: 15px;
+            }
+            .navdiv { 
+                display: flex; align-items: center; justify-content:space-between; 
+            }
+            .logo a{
+                font-size: 35px; font-weight: 100; color: white; 
+            }
+            li {
+                list-style: none; display: inline-block; 
+            }
+            li a{
+                color: white; font-size: 20px; font-weight:lighter; margin-right: 25px;
+            }
+            #menuButton {
+                display: none;
+                font-size: 30px;
+                cursor: pointer;
+            }
+            #mobileMenu {
+                display: none;
+                flex-direction: column;
+                background-color: rgba(255, 255, 255, 0.2);
+                position: absolute;
+                top: 60px;
+                right: 15px;
+                padding: 10px;
+            }
+            #mobileMenu.active {
+                display: flex;
+            }
+            @media (max-width: 768px) {
+                .navdiv ul {
+                    display: none;
+                }
+                #menuButton {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    
+    <body class="affirms">
+        <div class="wrapper-main">
+        
+        
+        <link rel="stylesheet" href="style.css">
+        <nav class="navbar">
+            <div class="navdiv" gap="20px">
+                <div class="logo" font-size="10px"><a href="index.html">Manifestra</a></div> 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="subliminals.html">Subliminals</a></li>
+                    <li><a href="affirmations.html"class="active" >Affirmations</a></li>
+                   
+                </ul>
+                <div style="color:white" id="menuButton" onclick="toggleMenu()">☰</div>
+
+                <ul class="menu" id="mobileMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="subliminals.html">Subliminals</a></li>
+                    <li><a href="affirmations.html">Affirmations</a></li>
+                </ul>
+            </div>
+        </nav>
+        <h4 class="affirmA">Affirmations are positive statements that you repeat to yourself to challenge negative thoughts and reinforce desired beliefs or goals.</h4>
+        <div class="accordion">
+           <div class="contentBx">
+            <div class="label">Love</div>
+                <div class="content">
+                    <p style="padding-top: 10px">1. I am worthy of deep, unconditional love.</p>
+                    <p style="padding-top: 10px">2. Love flows to me effortlessly and abundantly.</p>
+                    <p style="padding-top: 10px">3. I give and receive love freely and joyfully.</p>
+                    <p style="padding-top: 10px">4. My heart is open to love, and I trust it fully.</p>
+                    <p style="padding-top: 10px">5. I attract healthy, loving, and supportive relationships.</p>
+                    <p style="padding-top: 10px">6. Every day, I grow more connected to love in all its forms.</p>
+                    <p style="padding-top: 10px">7. I radiate love and positivity wherever I go.</p>
+                    <p style="padding-top: 10px">8. Love begins with me, and I nurture it within myself.</p>
+                    <p style="padding-top: 10px">9. I deserve a love that uplifts, inspires, and empowers me.</p>
+                    <p style="padding-top: 10px">10. I am grateful for the love I have and the love that is on its way.</p>
+                </div>
+            </div>
+            <div class="contentBx">
+            <div class="label">Academics</div>
+                    <div class="content">
+                    <p style="padding-top: 10px">1. I am capable of achieving academic excellence through focus and determination.</p>
+                    <p style="padding-top: 10px">2. I absorb new information quickly and understand concepts with clarity.</p>
+                    <p style="padding-top: 10px">3. I am confident in my abilities and trust myself to succeed in all my studies.</p>
+                    <p style="padding-top: 10px">4. I manage my time effectively and stay organized in my academic life.</p>
+                    <p style="padding-top: 10px">5. Every challenge I face helps me grow stronger and more resilient as a student.</p>
+                    </div>
+            </div>
+            <div class="contentBx">
+            <div class="label">Money</div>
+                    <div class="content">
+                        <p style="padding-top: 10px">1. I attract wealth and financial abundance effortlessly.</p>
+                        <p style="padding-top: 10px">2. Money flows to me from multiple sources, and I welcome it with gratitude.</p>
+                        <p style="padding-top: 10px">3. I am worthy of financial success and prosperity.</p>
+                        <p style="padding-top: 10px">4. I make smart, confident decisions with my money.</p>
+                        <p style="padding-top: 10px">5. My income is constantly increasing, and I am open to new opportunities.</p>
+                    </div>
+            </div>
+                <div class="contentBx"> 
+                <div class="label">Body</div>
+                <div class="content">
+                    <p style="padding-top: 10px">1. My body is strong, capable, and beautifully unique.</p>
+                    <p style="padding-top: 10px">2. I honor and respect my body as it carries me through life.</p>
+                    <p style="padding-top: 10px">3. Every day, I grow more connected to and confident in my body.</p>
+                    <p style="padding-top: 10px">4. I nourish my body with love, movement, and gratitude.</p>
+                    <p style="padding-top: 10px">5. My body deserves kindness, care, and celebration.</p>
+                </div>
+            </div>
+            <div class="contentBx">
+                <div class="label">Skin</div>
+                        <div class="content">
+                            <p style="padding-top: 10px">1. My skin is healing, glowing, and becoming more radiant every day.</p>
+                            <p style="padding-top: 10px">2. I embrace my skin with love, patience, and gratitude.</p>
+                            <p style="padding-top: 10px">3. My skin reflects my inner peace and well-being.</p>
+                            <p style="padding-top: 10px">4. I treat my skin with kindness and give it the care it deserves.</p>
+                            <p style="padding-top: 10px">5. I am confident in my natural beauty and comfortable in my skin.</p>
+                        </div>
+                </div>
+                <div class="contentBx">
+                    <div class="label">Career</div>
+                            <div class="content">
+                                <p style="padding-top: 10px">1. I am building a career I love and am proud of.</p>
+                                <p style="padding-top: 10px">2. Opportunities flow to me because I am skilled, capable, and ready.</p>
+                                <p style="padding-top: 10px">3. Every step I take brings me closer to my professional dreams.</p>
+                                <p style="padding-top: 10px">4. I am valued and respected in my field.</p>
+                                <p style="padding-top: 10px">5. I attract success by being authentic, passionate, and driven.</p>
+                            </div>
+                    </div> 
+                    <div class="contentBx">
+                        <div class="label">Beauty</div>
+                                <div class="content">
+                                    <p style="padding-top: 10px">I am beautiful, inside and out, just as I am.</p>
+                                    <p style="padding-top: 10px">My beauty shines through in every smile and gesture.</p>
+                                    <p style="padding-top: 10px">I radiate confidence, grace, and positive energy.</p>
+                                    <p style="padding-top: 10px">I celebrate my unique features and love the skin I’m in.</p>
+                                    <p style="padding-top: 10px">Every day, I feel more comfortable and confident in my beauty.</p>
+                                </div>
+                     </div> 
+                        <div class="contentBx">
+                            <div class="label">Luck</div>
+                                    <div class="content">
+                                        <p style="padding-top: 10px">1. I am a magnet for good luck and positive experiences.</p>
+                                        <p style="padding-top: 10px">2. Every day, I attract opportunities that bring me success and joy.</p>
+                                        <p style="padding-top: 10px">3. I trust that luck is always on my side, guiding me toward my goals.</p>
+                                        <p style="padding-top: 10px">4. I am worthy of abundance, and luck flows to me effortlessly.</p>
+                                        <p style="padding-top: 10px">5. I am open to receiving the blessings and good fortune that come my way.</p>
+                                    </div>
+                            </div> 
+        </div>  
+        <div class="tips">
+            <h2 class="tipsH">Tips</h2> 
+            <hr style="color: white"> 
+            <p style="padding-top: 10px; font-family: sans-serif; color: white; font-size: 20px">1. Repeat everyday2</p>
+            <p style="padding-top: 10px; font-family: sans-serif; color: white; font-size: 20px">2. Stay in a positive emotion</p>
+            <p style="padding-top: 10px; font-family: sans-serif; color: white; font-size: 20px">3. Look in thhe mirror while saying it</p>
+            <p style="padding-top: 10px;  padding-bottom: 10px; font-family: sans-serif; color: white; font-size: 20px">4. Write down your daily affirmations in a journal</p>
+            
+        </div>
+        <div class="contact" style="background-color: #7A9B71"> 
+            <div class="logo" style="font-size: 10px; font-family: sans-serif"><a href="index.html">Manifestra</a></div>
+            <ul class="contactLinks" style="font-family: sans-serif">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="subliminals.html">Subliminals</a></li>
+                <li><a href="affirmations.html">Affirmations</a></li>
+               
+            </ul>
+        </div>
+        </div>
+        <script> 
+                document.querySelectorAll('.accordion .label').forEach(label => {
+                    label.addEventListener('click', () => {
+                        const allBoxes = document.querySelectorAll('.accordion .contentBx');
+                        const currentBox = label.parentElement;
+
+                        allBoxes.forEach(box => {
+                            if (box !== currentBox) {
+                                box.classList.remove('active');
+                            }
+                        });
+
+                        currentBox.classList.toggle('active');
+                    });
+                });
+        </script>
+         <script>
+            function toggleMenu() {
+              const menu = document.getElementById("mobileMenu");
+              menu.classList.toggle("active");
+            }
+          </script>
+    </body>
+</html>

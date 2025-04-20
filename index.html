@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="webIcon/jpg.webp" href="webIcon.jpg"> <!-- Fix icon--> 
+        <title>Manifestra</title>
+        <style type="text/css">
+            *{
+                text-decoration: none; 
+            }
+            .navbar {
+                font-family: sans-serif; padding-right: 15px; padding-left: 15px; padding-top: 15px;
+            }
+            .navdiv { 
+                display: flex; align-items: center; justify-content:space-between; 
+            }
+            .logo a{
+                font-size: 35px; font-weight: 100; color: white; 
+            }
+            li {
+                list-style: none; display: inline-block; 
+            }
+            li a{
+                color: white; font-size: 20px; font-weight:lighter; margin-right: 25px;
+            }
+            #menuButton {
+                display: none;
+                font-size: 30px;
+                cursor: pointer;
+            }
+            #mobileMenu {
+                display: none;
+                flex-direction: column;
+                background-color: rgba(255, 255, 255, 0.2);
+                position: absolute;
+                top: 60px;
+                right: 15px;
+                padding: 10px;
+                border-radius: 15px;
+            }
+            #mobileMenu.active {
+                display: flex;
+            }
+            @media (max-width: 768px) {
+                .navdiv ul {
+                    display: none;
+                }
+                #menuButton {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    
+    <body class="subliminals">
+        <div class="wrapper-main">
+        
+        
+        <link rel="stylesheet" href="style.css">
+        <nav class="navbar">
+            <div class="navdiv" gap="20px">
+                <div class="logo" font-size="10px"><a href="index.html">Manifestra</a></div> 
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="subliminals.html">Subliminals</a></li>
+                    <li><a href="affirmations.html">Affirmations</a></li>
+                   
+                </ul>
+                <div style="color: white"id="menuButton" onclick="toggleMenu()">☰</div>
+
+                <ul class="menu" id="mobileMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="subliminals.html">Subliminals</a></li>
+                    <li><a href="affirmations.html">Affirmations</a></li>
+                </ul>
+            </div>
+        </nav>
+        
+        <div class="flexbox">
+            <div class="intro"> 
+                <img class="star" style="padding-top: 10px; padding-bottom: 5px;"src="star.gif">
+                <h1>Welcome to Manifestra</h1> 
+                <h2 class="slogan" style="text-align: left; color: white; font-family: sans-serif; font-size: 30px; font-weight: lighter;">I attract. I receive. I am.</h2>
+
+            </div>
+            <section id="about"> 
+                <h2 class="aboutH">Choose the type of manifestation that aligns best with you!</h2>
+                <div class="options">
+                    <div class="option">
+                    <img class="gif"src="duck.gif">
+                    <a href="subliminals.html" class="option-box"> 
+    
+                        <h3 style="padding-bottom: 5px; font-size: 30px;">Subliminals</h3>
+                        <hr style="border: none; height: 1px; background-color: white">
+                        <p style="padding-top: 5px; font-size: 20px;">Find audios to re-programme your mind into believing your desired reality</p>
+                        
+                    </a>
+                    </div>
+                    <div class="option">
+                    <img class="gif"src="mouth.gif">
+                    <a href="affirmations.html" class="option-box"> 
+                        <h3 style="padding-bottom: 5px; font-size: 30px;">Affirmations</h3>
+                        <hr style="border: none; height: 1px; background-color: white">
+                        <p style="padding-top: 5px; font-size: 20px;">Discover affirmations that best suit your desires</p>  
+                        
+                    </a>
+                    </div>
+                </div> 
+            </section>
+            <div class="image">
+                <img src="imageFront.jpg" alt="Girl holding moon" style="border-radius: 50%;">
+            </div>
+            
+        </div>
+        <div class="contact"> 
+            <div class="logo" style="font-size: 10px; font-family: sans-serif"><a href="index.html">Manifestra</a></div>
+            <ul class="contactLinks" style="font-family: sans-serif">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="subliminals.html">Subliminals</a></li>
+                <li><a href="affirmations.html">Affirmations</a></li>
+               
+            </ul>
+        </div>
+        </div>
+    <script>
+        function toggleMenu() {
+          const menu = document.getElementById("mobileMenu");
+          menu.classList.toggle("active");
+        }
+      </script>
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const options = document.querySelectorAll('.option');
+    
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                    }
+                });
+            }, {
+                threshold: 0.3 // triggers when 30% of the element is visible
+            });
+    
+            options.forEach(option => {
+                observer.observe(option);
+            });
+        });
+    </script>
+    
+      
+    
+      </div>
+      </body>
+
+
+    
+</html>

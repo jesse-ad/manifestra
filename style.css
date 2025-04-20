@@ -1,0 +1,444 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+.wrapper-main {
+    padding: 10px;
+    width: 100%;
+}
+body {
+    background-image: url("background1.png");
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment:fixed;
+    background-size:cover;
+    overflow-x:inherit; 
+}
+
+.subs {
+    background-image: url("subs.png");
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment:fixed;
+    background-size:cover;
+    overflow-x: hidden; 
+}
+.affirms {
+    background-image: url("affrims.png");
+    background-repeat: no-repeat; 
+    background-position: center;
+    background-attachment:fixed;
+    background-size:cover;
+    overflow-x: hidden; 
+}
+
+
+
+.flexbox {
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    flex-direction:row;
+    gap: 10px; 
+    padding-top: 5px;
+    margin-left: 5px;
+    overflow: hidden;
+    
+    padding-bottom: 250px;
+}
+.flexbox .image {
+    height: auto;
+    max-width: 800px;
+    width: 60%;
+    justify-content: right; 
+    padding-right: 10px; 
+    float:right;
+    margin-right: 100px;
+    margin-left: 900px;
+    margin-top: -1200px; 
+    z-index: 1;
+}
+
+.flexbox h1{
+    font-family: Georgia, 'Times New Roman', Times, serif; 
+    font-size: 100px;
+    color: white;
+    text-align: left;
+    float:left;
+    margin-right: 700px;
+}
+
+.aboutH {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 500;
+    color: white;
+}
+    
+.aboutp {
+    font-size: 20px;
+    color: white; 
+    text-align: center; 
+    font-family: sans-serif;
+    font-weight: lighter;
+    margin-left: 30px
+    
+}
+.slogan {
+    margin-top: 10px;
+    margin-left: 6px; 
+    padding: 0;
+    text-align: left;
+}
+.navbar ul li a.active {
+    border-bottom: 0.5px solid white;
+    padding-bottom: 2px;
+}
+.navbar ul li a {
+    transition: border-bottom 0.3s ease;
+}
+
+.navbar ul li a:hover {
+    border-bottom: 0.5px solid #ccc;
+}
+.menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    gap: 5px;
+}
+.menu span {
+    height: 3px;
+    width: 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+}
+.mobile-menu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 10px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border: 1px solid white;
+    padding: 10px;
+}
+#about {
+    margin-left: 40px;
+    margin-top: 300px;
+}
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    margin-right: 400px;
+    flex-direction: column;
+    margin-left: 200px;
+}
+.option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 200px;
+}
+.option.visible .gif {
+    opacity: 1;
+    transform: translateY(0);
+
+}
+.option-box {
+    border: 0.5px solid white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 17px;
+    font-size: 40px;
+    padding: 10px;
+    width: 90%;
+    max-width: 100px;
+    min-width: 280px;
+    text-align: left;
+    font-family: sans-serif;
+    color: white;
+    transition: transform 0.3s ease; 
+    box-sizing: border-box;
+}
+.option-box:hover {
+    transform:translateY(-5px); 
+
+} 
+.gif {
+    position: absolute;
+    width: 250px;
+    top: -140px;
+    width: 150px;
+    opacity: 0;
+    display: none;
+    transform: translateY(-50%);
+    transition: all 0.6s ease-out;
+}
+.option-box:hover .gif {
+    display:contents;
+}
+.intro {
+    display: flex;
+    flex-direction:column;
+    gap: 5px; 
+    padding-top: 100px;
+    margin-left: 75px; 
+    padding-right: 30px;
+}
+.star {
+    display: none;
+    width: 20%;
+    bottom: 50%;
+    right: 10%;
+    transform: transformY(-100%);
+}
+.intro .star {
+    display: block;
+}
+.subsH {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-right: 40px;
+    font-weight:lighter;
+    margin-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+   
+}
+.types {
+    border: 0.5px solid white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 17px; 
+    font-size: 20px;
+    width: 200px;
+    height: 100px;
+    text-align: center;
+    font-family: sans-serif; 
+    color: white;
+    transition: transform 0.3s ease;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    max-width: 800px;
+    gap: 10px;
+    padding-top: 20px; padding-left: 80px;
+    margin: 0 auto;
+    justify-content: center;
+}
+.types:hover {
+    transform: translateY(-5px);
+}
+
+.infoT {
+    border: 1px;
+    border-radius: 15px;
+    
+}
+.tips {
+    border: 0.5px solid white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 17px; 
+    font-size: 20px;
+    width: 80%;
+    max-width: 500px;
+    height: auto;
+    text-align: left;
+    padding-left: 20px;
+    font-family: sans-serif; 
+    color: white;
+    transition: transform 0.3s ease;  
+    display: flex;
+    align-items: left;
+    flex-direction: column;
+    justify-content: left;
+    margin-left: 20px;
+    margin-top: 40px;
+ 
+}
+.accordion {
+    max-width: 800px;
+    width: 90%;
+    margin-right: auto;
+    margin-left: 20px;
+
+}
+.accordion .contentBx {
+    position: relative;
+    margin-bottom: 0.5px;
+}
+.accordion .contentBx .label {
+    position: relative;
+    padding: 10px;
+    border: 0.5px solid white;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 17px; 
+    font-size: 20px;
+    font-family: sans-serif;
+    color: white;
+    cursor: pointer;
+
+} 
+.accordion .contentBx .label::before {
+    content: '>';
+    position: absolute;
+    top: 45%;
+    right: 20px;
+    transform: translateY(-50%);
+
+}
+.accordion .contentBx.active .label::before {
+    content: 'v';
+}
+.accordion .contentBx .content {
+    margin-top: 10px;
+    position: relative;
+    border: none;
+    height:0;
+    transition: height 0.3s ease, padding 0.3s ease;
+    overflow-y: auto;
+    color: white;
+    font-size: 17px;
+    font-family: sans-serif;
+}
+.accordion .contentBx.active .content {
+    height: auto;
+    padding: 10px 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 17px; 
+    overflow: hidden;
+    margin: 5px;
+
+}
+@media (max-width: 600px){
+    .aboutH {
+        margin-right: 100px;
+    }
+    .logo {
+        font-size: 5px;
+    }
+    .wrapper-main {
+        width: 100%;
+    }
+    .flexbox {
+        margin-left: -5px;
+        flex-direction: column;
+        justify-content: center;
+        overflow: hidden;
+        margin-left: 2px;
+        align-items: center;
+        padding: 50px 10px;
+     
+ 
+    }
+    .flexbox h1 {
+        font-size: 40px;
+        margin:0;
+        padding:0;
+        text-align: left;
+        margin-right: 800px;
+        margin-top: -200px;
+        margin-left: -60px;
+    }
+    .flexbox .image {
+       display: none;
+    }
+    #about {
+        margin: 0 auto;
+        margin-top: 100px;
+        padding: 0 10px;
+        text-align: left-align;
+        margin-left: -30px;
+
+    }
+    .aboutH {
+        font-size: 25px;
+        margin: 0 auto;
+        margin-left: 30px;
+        margin-right: 350px;
+        text-align: center;
+
+    }
+    .star {
+        margin-top: 30px;
+    }
+    .options {
+        margin-left: 80px;
+        justify-content: center;
+    }
+    
+        .subsH {
+            font-size: 40px;
+        }
+    
+        .aboutp {
+            font-size: 16px;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    
+        .accordion {
+            margin-left: 0;
+        }
+        .img {
+            padding-left: 2px;
+        }
+        .container {
+            gap: 2px;
+
+        }
+        .affirmA {
+            font-size: 10px;
+        }
+        .subsH {
+            font-size: 30px;
+        }
+   
+        .img {
+            width: 40%;
+        }
+        .slogan {
+            margin-left: -60px;
+        }
+     
+}
+.affirmA {
+    font-family: sans-serif;
+    font-size: 30px;
+    color: white;
+    margin-right: 40px;
+    font-weight:lighter;
+    margin-left: 10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.tipsH {
+    font-size: 25px;
+    color: white;
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.contact {
+    background-color: #214872;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 200px;
+    margin-left:-10px;
+    margin-bottom: -10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+
+}
+

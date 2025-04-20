@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="icon" type="webIcon/jpg.webp" href="webIcon.jpg"> <!-- Fix icon--> 
+        <title>Manifestra</title>
+        <style type="text/css">
+            *{
+                text-decoration: none; 
+            }
+            .navbar {
+                font-family: sans-serif; padding-right: 15px; padding-left: 15px; padding-top: 15px;
+            }
+            .navdiv { 
+                display: flex; align-items: center; justify-content:space-between; 
+            }
+            .logo a{
+                font-size: 35px; font-weight: 100; color: white; 
+            }
+            li {
+                list-style: none; display: inline-block; 
+            }
+            li a{
+                color: white; font-size: 20px; font-weight:lighter; margin-right: 25px;
+            }
+            #menuButton {
+                display: none;
+                font-size: 30px;
+                cursor: pointer;
+            }
+            #mobileMenu {
+                display: none;
+                flex-direction: column;
+                background-color: rgba(255, 255, 255, 0.2);
+                position: absolute;
+                top: 60px;
+                right: 15px;
+                padding: 10px;
+            }
+            #mobileMenu.active {
+                display: flex;
+            }
+            @media (max-width: 768px) {
+                .navdiv ul {
+                    display: none;
+                }
+                #menuButton {
+                    display: block;
+                }
+            }
+        </style>
+    </head>
+    
+    <body class="subs">
+        <div class="wrapper-main">
+        
+        
+        <link rel="stylesheet" href="style.css">
+        <nav class="navbar">
+            <div class="navdiv" gap="20px">
+                <div class="logo" font-size="10px"><a href="index.html">Manifestra</a></div> 
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="subliminals.html"class="active" >Subliminals</a></li>
+                    <li><a href="affirmations.html">Affirmations</a></li>
+                   
+                </ul>
+                <div style="color:white" id="menuButton" onclick="toggleMenu()">☰</div>
+
+                <ul class="menu" id="mobileMenu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="subliminals.html">Subliminals</a></li>
+                    <li><a href="affirmations.html">Affirmations</a></li>
+                </ul>
+            </div>
+        </nav>
+       
+        <h4 class="subsH">Subliminals are hidden messages that are designed to bypass conscious awareness and influence the subconcisous mind</h4>
+        
+        <div class="grid">
+            <a href="https://youtube.com/playlist?list=PLJLLH-gfBMiylzf1z_b23YAMMJD1zMont&si=Rxgiei79Xy-BWXXU" class="types"> 
+                <h3 style="padding-bottom: 5px; font-size: 30px;">Love</h3>
+                <img class="gif"src="" style="top: 160%"> 
+            </a>
+            <a href="https://youtube.com/playlist?list=PLJLLH-gfBMizs_T4Xa_bqgwpYSN4J5jpC&si=JzMjcJdFEyzY8NX8" class="types"> 
+                <h3 style="padding-bottom: 5px; font-size: 30px;">Academics</h3>
+                <img class="gif"src="" style="top: 160%"> 
+            </a>
+            <a href="https://youtube.com/playlist?list=PLJLLH-gfBMizmXNaBER5uirhzYo08sZhf&si=BbppZCe9d8wgAQxm" class="types"> 
+                <h3 style="padding-bottom: 5px; font-size: 30px;">Money</h3>
+                <img class="gif"src="" style="top: 160%"> 
+            </a>
+            <a href="https://youtube.com/playlist?list=PLJLLH-gfBMiyeaDLfOa329fRuzIw8U5L8&si=2SvP7IOjGWEJaU47" class="types"> 
+                <h3 style="padding-bottom: 5px; font-size: 30px;">Body</h3>
+                <img class="gif"src="" style="top: 160%"> 
+            </a> 
+            <a href="https://youtube.com/playlist?list=PLJLLH-gfBMiyTDYBFLdeh1e3PI7XK12m3&si=TFDWnSOaFcZH_RPZ" class="types"> 
+                <h3 style="padding-bottom: 5px; text-align: center; font-size: 30px;">Skin</h3>
+                <img class="gif"src="" style="top: 160%"> 
+            </a> 
+            <a href="" class="types"> 
+                <h3 style="padding-bottom: 5px; font-size: 30px;">Career</h3>
+                <img class="gif"src="" style="top: 160%"> 
+            </a> 
+            <a href="https://youtube.com/playlist?list=PLJLLH-gfBMizetWdle93szC93KVv2Kc5q&si=Jcx5Lvnk3O3cpZy2" class="types"> 
+                <h3 style="padding-bottom: 5px; font-size: 30px;">Beauty</h3>
+                <img class="gif"src="" style="top: 160%"> 
+            </a> 
+            <a href="https://youtube.com/playlist?list=PLJLLH-gfBMixvnRj-eLlw9E-7wJK5EfLB&si=v1IB_-BW1YoubPHF" class="types"> 
+                <h3 style="padding-bottom: 5px; font-size: 30px;">Luck</h3>
+                <img class="gif"src="" style="top: 160%"> 
+            </a> 
+        
+        </div>
+        <div class="tips">
+            <h2 class="tipsH">Tips</h2> 
+            <hr style="color: white"> 
+            <p style="padding-top: 10px; font-family: sans-serif; color: white; font-size: 20px">1. Drink water while you listen</p>
+            <p style="padding-top: 10px; font-family: sans-serif; color: white; font-size: 20px">2. Visualize the results you would like while you listen</p>
+            <p style="padding-top: 10px; font-family: sans-serif; color: white; font-size: 20px">3. Listen to a subliminal a minimum of 3 times</p>
+            <p style="padding-top: 10px; padding-bottom: 10px; font-family: sans-serif; color: white; font-size: 20px">4. Let go and try not to think of results after listening</p>
+            
+        </div>
+        <div class="contact" style="background-color:#7B6177"> 
+            <div class="logo" style="font-size: 10px; font-family: sans-serif"><a href="index.html">Manifestra</a></div>
+            <ul class="contactLinks" style="font-family: sans-serif">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="subliminals.html">Subliminals</a></li>
+                <li><a href="affirmations.html">Affirmations</a></li>
+               
+            </ul>
+        </div>
+        </div>
+        <script>
+            function toggleMenu() {
+              const menu = document.getElementById("mobileMenu");
+              menu.classList.toggle("active");
+            }
+          </script>
+    </body>
+</html>
