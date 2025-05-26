@@ -319,6 +319,9 @@ body {
 
 }
 @media (max-width: 600px){
+    .star {
+        display: none;
+    }
     .aboutH {
         margin-right: 100px;
     }
